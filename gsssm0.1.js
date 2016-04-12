@@ -5,7 +5,7 @@
     
     var cvs2overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs2 = canvas({ resizable:false });
-    cvs2.container.prepend(cvs2overwrap);
+    canvas.container.prepend(cvs2overwrap);
     cvs2overwrap.append(cvs2.title_anchor).append(cvs2.wrapper).append(cvs2.caption_anchor);
     cvs2.overwrap = cvs2overwrap;
     
