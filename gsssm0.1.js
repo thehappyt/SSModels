@@ -5,7 +5,7 @@
     
     var high = Number(window.innerHeight) - 65;                     // 36 for status bar, 21 for title, 4 for css-margin
     var wide = Number(window.innerWidth) - 50                       // 50 for good measure
-    var cvsdim = Math.min(high,(wide-200)/2.0);
+    var cvsdim = Math.min(high,(wide-220)/2.0);
     
     var cvs1overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs1 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
