@@ -3,7 +3,7 @@
     
     var canvases = [];
     
-    var high = Number(window.innerHeight) - 61;                     // 36 for status bar, 21 for title, 4 for css-margin
+    var high = Number(window.innerHeight) - 65;                     // 36 for status bar, 21 for title, 4 for css-margin
     var wide = Number(window.innerWidth) - 20                       // 20 for good measure
     var cvsdim = Math.min(high,(wide-200)/2.0);
     
