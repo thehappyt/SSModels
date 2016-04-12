@@ -3,19 +3,19 @@
     
     var canvases = [];
     
-    var cvs1overwrap = $("<div/>").addClass("SSM_gswrap");
-    var cvs1 = canvas({ resizable:false });
-    console.log(cvs1);
-    cvs1.container.prepend(cvs1overwrap);
-    cvs1overwrap.append(cvs1.title_anchor).append(cvs1.wrapper).append(cvs1.caption_anchor);
-    cvs1.overwrap = cvs1overwrap;
-    canvases.push(cvs1);
-    
     var cvs2overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs2 = canvas({ resizable:false });
     cvs2.container.prepend(cvs2overwrap);
     cvs2overwrap.append(cvs2.title_anchor).append(cvs2.wrapper).append(cvs2.caption_anchor);
     cvs2.overwrap = cvs2overwrap;
+    
+    var cvs1overwrap = $("<div/>").addClass("SSM_gswrap");
+    var cvs1 = canvas({ resizable:false });
+    canvas.container.prepend(cvs1overwrap);
+    cvs1overwrap.append(cvs1.title_anchor).append(cvs1.wrapper).append(cvs1.caption_anchor);
+    cvs1.overwrap = cvs1overwrap;
+
+    canvases.push(cvs1);
     canvases.push(cvs2);
     
     //this.canvas.wrapper.css({float:"left"});
