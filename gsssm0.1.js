@@ -3,13 +3,13 @@
     
     var canvases = [];
     
-    var high = Number(window.innerHeight) - 65;                     // 36 for status bar, 21 for title, 8 for css-margin
+    var high = Number(window.innerHeight) - 61;                     // 36 for status bar, 21 for title, 4 for css-margin
     var wide = Number(window.innerWidth) - 20                       // 20 for good measure
     var cvsdim = Math.min(high,(wide-200)/2.0);
     
     var cvs2overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs2 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
-    cvs2.wrapper.css({margin: '4px'});
+    cvs2.wrapper.css({margin: '2px'});
     $(cvs2.__canvas_element).css({border: '1px solid #AAA'});
     $(cvs2.__overlay_element).css({border: '1px solid #AAA'});
     canvas.container.prepend(cvs2overwrap);
@@ -18,7 +18,7 @@
     
     var cvs1overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs1 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
-    cvs1.wrapper.css({margin: '4px'});
+    cvs1.wrapper.css({margin: '2px'});
     $(cvs1.__canvas_element).css({border: '1px solid #AAA'});
     $(cvs1.__overlay_element).css({border: '1px solid #AAA'});
     canvas.container.prepend(cvs1overwrap);
