@@ -16,6 +16,10 @@
     cvs1overwrap.append(cvs1.title_anchor).append(cvs1.wrapper).append(cvs1.caption_anchor);
     cvs1.overwrap = cvs1overwrap;
     canvases.push(cvs1);
+    sphere({ canvas: cvs1, visible: false });                       // Activate cvs1.
+
+    print('', {end:''});
+    print_options({width:200, height:cvsdim});
 
     var cvs2overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs2 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
@@ -26,16 +30,8 @@
     cvs2overwrap.append(cvs2.title_anchor).append(cvs2.wrapper).append(cvs2.caption_anchor);
     cvs2.overwrap = cvs2overwrap;
     canvases.push(cvs2);
-    
-    //this.canvas.wrapper.css({float:"left"});
-    
-    sphere({ canvas: cvs1, visible: false });                       // Activate cvs1.
     sphere({ canvas: cvs2, visible: false });                       // Activate cvs2.
     
-    
-    print('', {end:''});
-    print_options({width:200, height:cvsdim});
-
     var myStylesLocation = "https://raw.githack.com/thehappyt/SSModels/gh-pages/gsssm0.1.css";
     $('<link rel="stylesheet" type="text/css" href="'+myStylesLocation+'" >') .appendTo("head");
 
