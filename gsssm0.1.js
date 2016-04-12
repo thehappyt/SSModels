@@ -7,15 +7,6 @@
     var wide = Number(window.innerWidth) - 20                       // 20 for good measure
     var cvsdim = Math.min(high,(wide-200)/2.0);
     
-    var cvs2overwrap = $("<div/>").addClass("SSM_gswrap");
-    var cvs2 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
-    cvs2.wrapper.css({margin: '2px'});
-    $(cvs2.__canvas_element).css({border: '1px solid #AAA'});
-    $(cvs2.__overlay_element).css({border: '1px solid #AAA'});
-    canvas.container.prepend(cvs2overwrap);
-    cvs2overwrap.append(cvs2.title_anchor).append(cvs2.wrapper).append(cvs2.caption_anchor);
-    cvs2.overwrap = cvs2overwrap;
-    
     var cvs1overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs1 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
     cvs1.wrapper.css({margin: '2px'});
@@ -24,8 +15,16 @@
     canvas.container.prepend(cvs1overwrap);
     cvs1overwrap.append(cvs1.title_anchor).append(cvs1.wrapper).append(cvs1.caption_anchor);
     cvs1.overwrap = cvs1overwrap;
-
     canvases.push(cvs1);
+
+    var cvs2overwrap = $("<div/>").addClass("SSM_gswrap");
+    var cvs2 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
+    cvs2.wrapper.css({margin: '2px'});
+    $(cvs2.__canvas_element).css({border: '1px solid #AAA'});
+    $(cvs2.__overlay_element).css({border: '1px solid #AAA'});
+    canvas.container.append(cvs2overwrap);
+    cvs2overwrap.append(cvs2.title_anchor).append(cvs2.wrapper).append(cvs2.caption_anchor);
+    cvs2.overwrap = cvs2overwrap;
     canvases.push(cvs2);
     
     //this.canvas.wrapper.css({float:"left"});
