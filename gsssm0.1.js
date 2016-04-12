@@ -34,7 +34,7 @@
     print('', {end:''});
     print_options({width:200, height:cvsdim});
 
-    var myStylesLocation = "https://raw.githack.com/thehappyt/SSModels/master/gsssm0.1.css";
+    var myStylesLocation = "https://raw.githack.com/thehappyt/SSModels/gh-pages/gsssm0.1.css";
     $('<link rel="stylesheet" type="text/css" href="'+myStylesLocation+'" >') .appendTo("head");
 
     var global = window;
