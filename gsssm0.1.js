@@ -20,6 +20,7 @@
 
     print('', {end:''});
     print_options({width:200, height:cvsdim});
+    window.print_anchor.addClass("SMM_gswrap")
 
     var cvs2overwrap = $("<div/>").addClass("SSM_gswrap");
     var cvs2 = canvas({ resizable:false, width:cvsdim, height: cvsdim });
