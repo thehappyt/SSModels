@@ -72,7 +72,7 @@
         } else {
             var p = m.pos;
             for (var i=0; i<p.length; i++) { p[i] = p[i].multiply(R); }
-            var curv = curve({pos: p, color: args.color, opacity: args.opacity, shininess: args.shininess, emissive: args.emissive })
+            var curv = curve({pos: p, color: args.color, shininess: args.shininess, emissive: args.emissive })
             curv.origin=args.pos; curv.axis=args.axis; curv.up=args.up; curv.radius=args.thickness;
             return curv;
         }
