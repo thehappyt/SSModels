@@ -1,7 +1,7 @@
 //Solar System Body Descriptions (as of Jan 1, 2016)
 //          [Name       radius  Period  dist    theta0  color                   parent
 //          [text,      (R_E)   (yr)    (AU)    (rad)   (vecRGB)                (#)
-window.SSBd = [    ["Mercury", 0.382,  0.2408, 0.387,  0.5069, vec(0.980,0.973,0.949), null],      #vec(0.980,0.973,0.949), 
+var SSBd = [    ["Mercury", 0.382,  0.2408, 0.387,  0.5069, vec(0.980,0.973,0.949), null],      #vec(0.980,0.973,0.949), 
             ["Venus",   0.949,  0.6152, 0.723,  3.2387, color.white,            null],
             ["Earth",   1.000,  1.0000, 1.000,  1.7561, color.white,            null],      #Must be fourth in list.
             ["Mars",    0.532,  1.8808, 1.524,  3.0577, color.white,            null],
